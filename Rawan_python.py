@@ -94,6 +94,10 @@ def main():
         st.title("Database Results")
         col1, col2 = st.columns(2)
 
+        st.markdown("----------")
+        st.caption("Hint:he table is Employee_Salary ") 
+        
+
         with col1:
             with st.form(key='query_form'):
                 raw_code = st.text_area("SQL Code Here")
